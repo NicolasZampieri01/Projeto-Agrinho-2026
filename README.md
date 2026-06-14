@@ -88,7 +88,7 @@ Os conteúdos informativos foram organizados com base nas fontes e matérias apr
 
 ## Autor
 
-Projeto desenvolvido por **Nicolas Zampieri**.
+Projeto desenvolvido por **Nicolas Zampieri**.;
 Instituição de Ensino: **Colégio Cívico-Militar Hermínia Rolim Lupion**
 
 O site e o jogo **Grapes Farm** fazem parte de uma proposta educacional relacionada ao Agrinho, com foco em sustentabilidade, tecnologia, educação e valorização do campo.
