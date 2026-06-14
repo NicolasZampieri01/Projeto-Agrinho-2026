@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026</title>
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTES E ÍCONES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         TELA DE BOAS-VINDAS
+    =============================== -->
+    <div id="welcome-screen">
+        <div class="welcome-box">
+            <i class="fa-solid fa-seedling"></i>
+            <h2>Bem-vindo ao Agrinho 2026</h2>
+            <p>Antes de começar, informe seu nome.</p>
+
+            <input type="text" id="username" placeholder="Digite seu nome">
+
+            <button type="button" id="save-name">
+                Entrar no Site
+            </button>
+        </div>
+    </div>
+
+    <!-- ==============================
+         HEADER / MENU
+    =============================== -->
+    <header class="header">
+        <div class="container nav">
+            <a href="#inicio" class="logo" aria-label="Ir para o início">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                    <h2>AGRINHO</h2>
+                    <span>2026</span>
+                </div>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul class="menu">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#pilares" class="nav-link">Pilares</a></li>
+                    <li><a href="#agrofloresta" class="nav-link">Agrofloresta</a></li>
+                    <li><a href="#iniciativas" class="nav-link">Iniciativas</a></li>
+                    <li><a href="#sustentabilidade" class="nav-link">Sustentabilidade</a></li>
+                    <li><a href="#grapes-farm" class="nav-link">Grapes Farm</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="header-btn menu-toggle" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <button type="button" class="header-btn" id="settings-btn" aria-label="Abrir configurações">
+                    <i class="fa-solid fa-user-pen"></i>
+                </button>
+
+                <button type="button" class="header-btn" id="theme-toggle" aria-label="Alternar modo escuro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==============================
+             SEÇÃO INÍCIO
+        =============================== -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>
+                        Agro forte,<br>
+                        futuro sustentável:
+                    </h1>
+
+                    <h2>
+                        equilíbrio entre produção
+                        e meio ambiente.
+                    </h2>
+
+                    <div id="personal-greeting"></div>
+
+                    <p>
+                        O Agrinho 2026 promove a consciência, o conhecimento e atitudes que constroem
+                        um campo produtivo, responsável e sustentável para as futuras gerações.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             SEÇÃO PILARES
+        =============================== -->
+        <section id="pilares" class="features">
+            <div class="container features-grid">
+                <article class="feature-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Sustentabilidade</h3>
+                    <p>Cuidar do meio ambiente e garantir vida para o futuro.</p>
+                </article>
+
+                <article class="feature-card">
+                    <i class="fa-solid fa-tractor"></i>
+                    <h3>Produção Consciente</h3>
+                    <p>Produzir mais e melhor respeitando os recursos naturais.</p>
+                </article>
+
+                <article class="feature-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Educação</h3>
+                    <p>A educação transforma realidades e semeia novas atitudes.</p>
+                </article>
+
+                <article class="feature-card">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                    <h3>Comunidade</h3>
+                    <p>Juntos construímos um mundo melhor.</p>
+                </article>
+
+                <article class="feature-card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Inovação</h3>
+                    <p>Tecnologia e inovação a serviço de um agro sustentável.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==============================
+             SEÇÃO AGROFLORESTA
+        =============================== -->
+        <section id="agrofloresta" class="tema agrofloresta-section">
+            <div class="container tema-grid">
+                <div class="tema-img">
+                    <a href="https://www.instagram.com/terraplantaagrofloresta/" target="_blank" rel="noopener noreferrer">
+                        <img src="Imagens/Agrofloresta-Capa01.png" alt="Agrofloresta Terra Planta" loading="lazy">
+
+                        <div class="tema-badge">
+                            <i class="fa-solid fa-award"></i>
+                            Destaque Regional
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tema-text">
+                    <h2>Agrofloresta</h2>
+
+                    <p id="tema-personalizado" class="tema-destaque"></p>
+
+                    <p>
+                        A Agrofloresta Terra Planta, localizada em Sabáudia (PR), é um exemplo de produção
+                        sustentável que integra agricultura e preservação ambiental. O sistema agroflorestal
+                        combina diferentes espécies vegetais em um mesmo espaço, promovendo biodiversidade,
+                        conservação do solo e produção de alimentos de forma equilibrada.
+                    </p>
+
+                    <button type="button" class="btn-secondary" id="open-agro-modal">
+                        Conheça mais sobre o tema
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL AGROFLORESTA -->
+        <div id="modal-agrofloresta" class="modal-agro" aria-hidden="true">
+            <div class="modal-agro-content" role="dialog" aria-modal="true" aria-labelledby="modal-agro-title">
+                <button type="button" class="fechar-modal" id="close-agro-modal" aria-label="Fechar modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <h2 id="modal-agro-title">Agrofloresta Terra Planta - Sabáudia (Pr)</h2>
+
+                <p>
+                    A Agrofloresta Terra Planta se destaca regionalmente pela sua produção sustentável, extensão e,
+                    principalmente, pelo seu objetivo, que é levar o sistema agroflorestal para todos.
+                </p>
+
+                <p>
+                    O sistema agroflorestal combina árvores, hortaliças, frutas e outras culturas agrícolas em um
+                    mesmo espaço, aumentando a biodiversidade.
+                </p>
+
+                <p>
+                    Além de produzir alimentos sustentáveis, essa técnica nos ensina uma nova maneira de se produzir
+                    junto com a sustentabilidade, com a natureza ajudando na própria produção, fortalecendo a relação
+                    entre agricultura e meio ambiente.
+                </p>
+
+                <h3>Veja algumas imagens!</h3>
+
+                <div class="galeria-agro">
+                    <img src="Imagens/AgroFloresta-01.webp" alt="Produção em sistema agroflorestal" loading="lazy">
+                    <img src="Imagens/Agrofloresta-02c.jpg" alt="Área de agrofloresta" loading="lazy">
+                    <img src="Imagens/AgroFloresta-03.jpg" alt="Cultivo em agrofloresta" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- ==============================
+             SEÇÃO INICIATIVAS
+        =============================== -->
+        <section id="iniciativas" class="explore">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Iniciativas Sustentáveis do Paraná</h2>
+                    <p>Conheça projetos, fazendas e instituições paranaenses que transformam sustentabilidade em ação.</p>
+                </div>
+
+                <div class="explore-grid">
+                    <article class="explore-card">
+                        <img src="Imagens/Alunos-Palotina.jpg" alt="Alunos em projeto de recuperação de nascentes" loading="lazy">
+
+                        <div class="report-badge">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+
+                        <div class="explore-content">
+                            <h3>Recuperação de Nascentes</h3>
+                            <p>
+                                Em Palotina, estudantes e produtores rurais atuam juntos na recuperação de nascentes,
+                                contribuindo para a preservação dos recursos hídricos da região.
+                            </p>
+                            <a href="https://www.aen.pr.gov.br/Noticia/Colegio-Agricola-de-Palotina-lidera-projeto-que-ja-recuperou-mais-de-260-nascentes-na" target="_blank" rel="noopener noreferrer">
+                                Ver Matéria →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="explore-card">
+                        <img src="Imagens/Projeto-Microbacias.jpg" alt="Projeto de proteção de microbacias" loading="lazy">
+
+                        <div class="report-badge">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+
+                        <div class="explore-content">
+                            <h3>Proteção de Microbacias</h3>
+                            <p>
+                                Projeto estadual que incentiva práticas sustentáveis no campo, promovendo a conservação
+                                do solo, da água e da vegetação nativa.
+                            </p>
+                            <a href="https://www.parana.pr.gov.br/aen/Noticia/Parana-tem-projeto-de-protecao-de-microbacias-no-campo-para-garantir-seguranca-hidrica" target="_blank" rel="noopener noreferrer">
+                                Ver Matéria →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="explore-card">
+                        <img src="Imagens/CEP-Sustentavel.jpg" alt="Projeto CEP Sustentável" loading="lazy">
+
+                        <div class="report-badge">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+
+                        <div class="explore-content">
+                            <h3>CEP Sustentável</h3>
+                            <p>
+                                Iniciativa do Colégio Estadual do Paraná que incentiva ações de reciclagem, uso consciente
+                                dos recursos naturais e educação ambiental.
+                            </p>
+                            <a href="https://www.cep.pr.gov.br/Pagina/CEP-Sustentavel" target="_blank" rel="noopener noreferrer">
+                                Ver Matéria →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="explore-card">
+                        <img src="Imagens/Ecoponto.jpg" alt="Ecoponto escolar" loading="lazy">
+
+                        <div class="report-badge">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+
+                        <div class="explore-content">
+                            <h3>Ecoponto Escolar</h3>
+                            <p>
+                                Estudantes desenvolveram um ecoponto para incentivar o descarte correto de recicláveis e
+                                resíduos eletrônicos, promovendo a conscientização ambiental na comunidade.
+                            </p>
+                            <a href="https://www.parana.pr.gov.br/aen/Noticia/Estudantes-da-rede-estadual-se-mobilizam-para-implantar-ecoponto-em-Sao-Jose-dos" target="_blank" rel="noopener noreferrer">
+                                Ver Matéria →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             SEÇÃO SUSTENTABILIDADE / CARROSSEL
+        =============================== -->
+        <section id="sustentabilidade" class="curiosidades">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Práticas Sustentáveis no Campo</h2>
+                    <p>Tecnologias e ações já utilizadas em propriedades rurais para produzir mais e preservar o meio ambiente.</p>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <button type="button" class="carousel-btn prev-slide" aria-label="Slide anterior">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="carousel" aria-live="polite">
+                        <article class="slide active">
+                            <img src="Imagens/Plantio-Direto.jpg" alt="Plantio direto" loading="lazy">
+                            <div class="slide-content">
+                                <h3>Plantio Direto</h3>
+                                <p>
+                                    Sistema que mantém a palhada sobre o solo, reduzindo erosões, conservando a umidade
+                                    e aumentando a fertilidade natural.
+                                </p>
+                                <a href="https://www.embrapa.br/web/agencia-de-informacao-tecnologica/tematicas/sistema-plantio-direto" target="_blank" rel="noopener noreferrer" class="slide-source">
+                                    Fonte Oficial ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="Imagens/Integração.Lavoura-Pecuária-Floresta.png" alt="Integração Lavoura-Pecuária-Floresta" loading="lazy">
+                            <div class="slide-content">
+                                <h3>Integração Lavoura-Pecuária-Floresta</h3>
+                                <p>
+                                    Produção agrícola, pecuária e florestal na mesma área, promovendo sustentabilidade
+                                    e melhor aproveitamento da terra.
+                                </p>
+                                <a href="https://www.embrapa.br/tema-integracao-lavoura-pecuaria-floresta-ilpf/nota-tecnica" target="_blank" rel="noopener noreferrer" class="slide-source">
+                                    Fonte Oficial ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="Imagens/Fixação.Biológica-de-Nitrogênio.webp" alt="Fixação Biológica de Nitrogênio" loading="lazy">
+                            <div class="slide-content">
+                                <h3>Fixação Biológica de Nitrogênio</h3>
+                                <p>
+                                    Técnica que reduz o uso de fertilizantes químicos utilizando microrganismos benéficos
+                                    para nutrir as plantas.
+                                </p>
+                                <a href="https://www.embrapa.br/tema-fixacao-biologica-de-nitrogenio/nota-tecnica" target="_blank" rel="noopener noreferrer" class="slide-source">
+                                    Fonte Oficial ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="Imagens/Agrofloresta.jpg" alt="Sistema agroflorestal" loading="lazy">
+                            <div class="slide-content">
+                                <h3>Sistemas Agroflorestais</h3>
+                                <p>
+                                    Árvores, lavouras e até animais podem compartilhar o mesmo espaço produtivo. Essa
+                                    técnica melhora o solo, aumenta a biodiversidade e ajuda na recuperação de áreas degradadas.
+                                </p>
+                                <a href="https://www.embrapa.br/agrobiologia/fazendinha-agroecologica/sistemas-agroflorestais" target="_blank" rel="noopener noreferrer" class="slide-source">
+                                    Fonte Oficial ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="Imagens/Controle-Biológico.webp" alt="Controle biológico de pragas" loading="lazy">
+                            <div class="slide-content">
+                                <h3>Controle Biológico de Pragas</h3>
+                                <p>
+                                    Em vez de utilizar apenas defensivos químicos, produtores utilizam insetos, fungos e
+                                    bactérias benéficas para combater pragas agrícolas de forma natural.
+                                </p>
+                                <a href="https://www.embrapa.br/tema-controle-biologico/sobre-o-tema" target="_blank" rel="noopener noreferrer" class="slide-source">
+                                    Fonte Oficial ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="Imagens/Mata-Ciliar.jpg" alt="Mata ciliar e proteção de nascentes" loading="lazy">
+                            <div class="slide-content">
+                                <h3>Proteção de Nascentes</h3>
+                                <p>
+                                    Recuperar áreas próximas às nascentes garante água limpa para o campo e para as futuras gerações.
+                                </p>
+                                <a href="https://www.iat.pr.gov.br/Noticia/Mata-ciliar-aumenta-12-no-Parana-com-protecao-de-nascentes-e-plantio-de-mudas" target="_blank" rel="noopener noreferrer" class="slide-source">
+                                    Fonte Oficial ↗
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <button type="button" class="carousel-btn next-slide" aria-label="Próximo slide">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             SEÇÃO GRAPES FARM
+        =============================== -->
+        <section id="grapes-farm" class="trajetoria">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projetos e Conquistas</h2>
+                    <p>
+                        Conheça um projeto desenvolvido em uma edição anterior do Agrinho, reconhecido regional e
+                        estadualmente por unir tecnologia, educação e conscientização.
+                    </p>
+                </div>
+
+                <article class="trajetoria-card">
+                    <div class="trajetoria-topo">
+                        <span id="trajetoria-convite" class="trajetoria-convite">
+                            Venha conhecer este projeto
+                        </span>
+
+                        <h3 class="trajetoria-titulo">Grapes Farm</h3>
+
+                        <div class="trajetoria-premios">
+                            <span>🏆 1º Lugar NRE de Apucarana</span>
+                            <span>🏅 6º Lugar do Paraná</span>
+                        </div>
+                    </div>
+
+                    <div class="trajetoria-img">
+                        <iframe src="https://scratch.mit.edu/projects/1051883480/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen title="Jogo Grapes Farm no Scratch"></iframe>
+                    </div>
+
+                    <div class="jogo-acoes">
+                        <button type="button" class="btn-secondary btn-info" id="toggle-info-jogo">
+                            <i class="fa-solid fa-book-open"></i>
+                            Conheça a História
+                        </button>
+
+                        <a href="https://scratch.mit.edu/projects/1051883480" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                            <i class="fa-solid fa-gamepad"></i>
+                            Jogar no Scratch
+                        </a>
+                    </div>
+
+                    <div id="info-jogo" class="info-jogo">
+                        <p>
+                            Desenvolvido para o Agrinho de 2024 com o tema: <strong>"Agrinho: do Campo à Cidade, Colhendo Oportunidades"</strong>,
+                            pelo aluno Nicolas Zampieri, o jogo <strong>Grapes Farm</strong> foi criado com o objetivo
+                            de mostrar a importância do trabalho rural e sua conexão com a vida na cidade.
+                        </p>
+
+                        <p>
+                            Através de uma narrativa completa, o jogador acompanha a história de um fazendeiro que começou
+                            nessa fazenda e realizou todo o processo: <strong>colheita, transporte e armazenamento</strong>,
+                            recebendo, ao final, uma grande recompensa!
+                        </p>
+
+                        <p>
+                            O projeto conquistou o <strong>1º lugar no Núcleo Regional de Educação de Apucarana</strong> e alcançou
+                            o <strong>6º lugar em todo o Estado do Paraná</strong>, na <strong>Subcategoria 2 - Linguagem Scratch</strong>.
+                        </p>
+
+                        <p>
+                            Embora desenvolvido em uma edição anterior do Agrinho, o <strong>Grapes Farm</strong> mantém uma relação
+                            com o tema atual ao destacar a importância de um <strong>Agro forte</strong>, de um <strong>Futuro sustentável</strong>
+                            e do <strong>Meio Ambiente</strong>.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==============================
+         FOOTER / CONTATO
+    =============================== -->
+    <footer id="contato" class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#inicio" class="logo footer-logo" aria-label="Ir para o início">
+                    <i class="fa-solid fa-seedling"></i>
+                    <div>
+                        <h2>AGRINHO</h2>
+                        <span>2026</span>
+                    </div>
+                </a>
+
+                <p id="footer-message">
+                    Cultivando conhecimento,<br>
+                    colhendo um futuro sustentável.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#pilares" class="nav-link">Pilares</a></li>
+                    <li><a href="#agrofloresta" class="nav-link">Agrofloresta</a></li>
+                    <li><a href="#iniciativas" class="nav-link">Iniciativas</a></li>
+                    <li><a href="#sustentabilidade" class="nav-link">Sustentabilidade</a></li>
+                    <li><a href="#grapes-farm" class="nav-link">Grapes Farm</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Parceiros e Contato</h3>
+
+                <div class="footer-orgs">
+                    <div class="org-card">
+                        <strong>Sistema FAEP</strong>
+                        <div class="org-links">
+                            <a href="https://www.instagram.com/sistema.faep/?hl=pt" target="_blank" rel="noopener noreferrer" aria-label="Instagram Sistema FAEP">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/19uybqjV3z/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Sistema FAEP">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/sistemafaep" target="_blank" rel="noopener noreferrer" aria-label="YouTube Sistema FAEP">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="org-card">
+                        <strong>SEED-PR</strong>
+                        <div class="org-links">
+                            <a href="https://www.instagram.com/educacaopr" target="_blank" rel="noopener noreferrer" aria-label="Instagram Educação Paraná">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/educacaopr" target="_blank" rel="noopener noreferrer" aria-label="Facebook Educação Paraná">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/c/DiretoriadeEducaçãoSeedPR" target="_blank" rel="noopener noreferrer" aria-label="YouTube Educação Paraná">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="org-card">
+                        <strong>Criador</strong>
+                        <div class="org-links">
+                            <a href="https://www.instagram.com/nicolas_.luz?igsh=MXN5Z2V6N2V4anE4dg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram do criador">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ==============================
+         MODAL CONFIGURAÇÕES
+    =============================== -->
+    <div id="settings-modal" class="settings-modal" aria-hidden="true">
+        <div class="settings-box" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+            <button type="button" id="close-settings" class="close-settings" aria-label="Fechar configurações">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2 id="settings-title">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+            </h2>
+
+            <p>Alterar nome do visitante</p>
+
+            <input type="text" id="new-username" placeholder="Digite seu nome">
+
+            <div class="settings-buttons">
+                <button type="button" id="save-new-name">Salvar</button>
+                <button type="button" id="reset-name">Limpar Nome</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT PRINCIPAL -->
+    <script src="script.js"></script>
+</body>
+
+</html>
